@@ -32,8 +32,8 @@ with open(filename, "r") as file:
             old_salary = int(emp["Salary"])
             new_salary = int(old_salary * 1.1)
             employee_dict[name] = new_salary
-
-            print(f"Employee Name: {name} Current Salary: ${new_salary:.2f}")
+            print(f"Employee Name: {name} Current Salary: ${old_salary:.2f}")
+            print(f"Employee Name: {name} New Salary: ${new_salary:.2f}")
 
 
 total_difference = sum(
@@ -46,7 +46,8 @@ print("=========================================")
 print()
 
 # iternate through the dictionary and print out the key and value as per image
-
+# for key, values in employee_dict.items:
+#     print(f"")
 
 print()
 print("=========================================")
